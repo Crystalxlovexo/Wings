@@ -16,7 +16,7 @@ archivesBaseName = 'wings'
 java.toolchain.languageVersion = JavaLanguageVersion.of(8)
 
 minecraft {
-	mappings channel: 'official', version: '1.16.5'
+	mappings channel: 'official', version: '1.19.2'
 	runs {
 		client {
 			workingDirectory project.file('run')
@@ -50,7 +50,7 @@ minecraft {
 }
 
 jar {
-	classifier '1.16.5'
+	classifier '1.19.2'
 	manifest {
 		attributes([
 			"Specification-Title": "wings",
@@ -65,5 +65,5 @@ jar {
 }
 
 dependencies {
-	minecraft 'net.minecraftforge:forge:1.16.5-36.2.0'
+	minecraft 'net.minecraftforge:forge:1.19.2-43.1.1'
 }
